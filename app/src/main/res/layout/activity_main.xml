@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/itemTv"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Item Name"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/urlTv"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Coffee Cup" />
+
+    <EditText
+        android:id="@+id/priceTv"
+        android:layout_width="92dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Ex: 9.99"
+        android:inputType="textPersonName"
+        tools:text="15.99"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toEndOf="@+id/itemTv" />
+
+    <EditText
+        android:id="@+id/urlTv"
+        android:layout_width="256dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Ex: https://example.example/item-url "
+        android:inputType="textPersonName"
+        tools:text="Amazon Store"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/urlTv" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wishlist_rv"
+        android:layout_width="409dp"
+        android:layout_height="635dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
